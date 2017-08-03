@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+	  <!-- 设置当前HTML文件的字符编码 -->
+	  <meta charset="utf-8">
+	  <!-- 设置浏览器兼容模式版本(让IE使用最新的渲染引擎工作) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 声明当前网页在移动端浏览器中展示的相关设置 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>LearnBootstrap</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
